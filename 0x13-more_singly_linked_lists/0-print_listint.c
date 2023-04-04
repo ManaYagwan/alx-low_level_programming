@@ -11,7 +11,9 @@
 size_t print_listint(const listint_t *h)
 {
 	int co = 0;
-
+	
+	if (h == NULL)
+		printf("empty list 😥😥");
 	while (h != NULL)
 	{
 	    	 printf("%d \n", h->n);
